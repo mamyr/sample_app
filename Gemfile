@@ -1,12 +1,16 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.2.5'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 
 group :development, :test do
 	gem 'mongoid', '5.1.0'
 	gem 'bson_ext'
-	gem 'rspec-rails', '2.13.1'
+	gem 'rspec-rails', '3.3.2'
+	gem 'guard-rspec', '4.6.0'
+	gem 'spork-rails', '4.0.0'
+  	gem 'guard-spork', '2.1.0'
+  	gem 'childprocess', '0.5.9'
 end
 
 group :test do
@@ -15,7 +19,7 @@ end
 
 group :test do
 	gem 'selenium-webdriver', '2.35.1'
-	gem 'capybara', '2.1.0'
+	gem 'capybara', '2.2.0'
 end
 
 # Use SCSS for stylesheets
